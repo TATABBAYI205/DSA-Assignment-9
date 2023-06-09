@@ -1,0 +1,14 @@
+package Assignment9;
+
+public class SumofNaturalNum 
+{
+	public static int sumOfFirstNNumbers(int n)
+	{
+        return (n * (n + 1)) / 2;
+    }
+    public static void main(String[] args)
+    {
+        System.out.println(sumOfFirstNNumbers(3)); 
+    }
+
+}

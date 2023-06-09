@@ -1,0 +1,13 @@
+package Assignment9;
+
+public class ExponentOfInt {
+	public static int calculateExponent(int N, int P)
+	{
+		return (int) Math.pow(N, P);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(calculateExponent(5,2));
+	}
+
+}

@@ -1,0 +1,16 @@
+package Assignment9;
+
+public class ArithmeticProgression {
+	public static int ArthmeticProgress(int a,int b,int N)
+	{
+		return a+(N-1)*b;
+	}
+	public static void main(String[] args) {
+		int a=2;
+		int b=1;
+		int N=5;
+		int n=ArthmeticProgress(a,b,N);
+		System.out.println("The "+N+"th term of the series is: "+n);
+	}
+
+}

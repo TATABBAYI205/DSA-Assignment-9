@@ -1,0 +1,21 @@
+package Assignment9;
+
+public class MaxElement {
+	    public static int findMax(int[] arr, int start, int end) 
+	    {
+	        if (start == end) 
+	        {
+	            return arr[start];
+	        }
+	        int mid = (start + end) / 2;
+	        int leftMax = findMax(arr, start, mid);
+	        int rightMax = findMax(arr, mid + 1, end);
+	        return Math.max(leftMax, rightMax);
+	    }
+	    public static void main(String[] args)
+	    {
+	        int[] arr = {1, 4, 3, -5, -4, 8, 6};
+	        int max = findMax(arr, 0, arr.length - 1);
+	        System.out.println(max);  
+	    }
+}
